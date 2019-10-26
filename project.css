@@ -1,0 +1,176 @@
+/* project.css */
+
+*{
+    margin: 0px ;
+    padding: 0px ;
+    box-sizing: border-box ;
+}
+
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("cafe10.jpg");
+    height: 100vh ; 
+    background-size: cover ;
+    background-repeat: no-repeat ;
+
+}
+
+.row{
+    max-width: 1180px;
+    margin: auto;
+
+}
+
+.logo{
+    height: 12px;
+    width: 6px;
+    float: left;
+
+}
+
+.main-nav{
+    float: right;
+    margin-top: 50px ;
+
+}
+.main-nav li{
+    display: inline-block ;
+    list-style: none ;
+    margin-left: 40px ;
+    -webkit-text-fill-color: white;
+    padding:2px 0px ;
+
+    }
+    .main-nav li:hover{
+        border-bottom: 3px solid purple;
+    }
+.main-nav li a{
+    text-decoration: none; 
+    text-transform: uppercase ;
+    list-style: none ;
+
+
+    }
+    body{
+        font-size: 16px ;
+        overflow-x: hidden;
+        color:wheat;
+        font-family: 'Flamenco', cursive;
+    }
+    .clearfix:after{
+        content: ".";
+        visibility: hidden;  
+        display: block;
+        height: 0px;
+        clear: both;
+
+    }
+
+    .main-content-header{
+        width: 1180px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+    }
+    h1{
+        color: beige;
+        font-size: 30px ;
+        letter-spacing: 0px;
+        word-spacing: 3px ;
+        margin-bottom: 10px;
+        text-transform: uppercase ;
+
+     }
+
+     .btn{
+         display: inline-block;
+         padding: 10px 30px ;
+         font-weight: lighter ;
+         text-decoration: none;
+         text-transform: uppercase ;
+         border-radius: 110px ;
+         color: antiquewhite ;
+         transition: background-color 0.2s ,border 0.2s, color 0.2s ;
+     }
+     .btn-full{
+         
+         color: palevioletred ;
+         margin-right: 15px ;
+         box-shadow: 2px 2px 2px 2px wheat;
+         background-color: black;
+     }
+     .btn-full:hover{
+         background-color: azure;
+
+     }
+     .btn-nav{
+       
+    
+        box-shadow: 2px 2px 2px 2px wheat;
+        color: black ;
+        background-color: palevioletred ;
+
+    }
+    .btn-nav:hover{
+        background-color: azure;
+    }
+ 
+    
+    /* .colorchange{
+        animation: colorchangecoffeecaffee 2s infinite ;
+    } 
+
+    @keyframes colorchange{
+      0%{color: blueviolet;}
+      25%{color: brown;}
+      50%{color: aqua;}
+      100%{color: darksalmon;}
+    }  */
+
+    .mobile-icon{display: none ;}
+
+    /* responsive queries */
+
+    @media only screen and (max-width:1180px){
+        .main-content-header{
+            width: 100%;
+            padding: 0 2% ;
+        }  
+    }
+
+    @media only screen and (max-width:998px){
+        h1{
+            font-size: 150% ;
+        }
+    }
+
+    @media only screen and (max-width:768px){
+        h1{font-size: 130%;}
+
+        .main-nav{display: none;}
+        .mobile-icon{display: inline-block;
+            color:palevioletred;
+            float: right ;
+            margin-top: 10px;
+            margin-right: 20px;
+            font-size: 30px;
+        }
+
+    }
+    .main-nav li{
+        float: left;
+        display: block;
+        margin-top: 10px;
+
+    }
+    
+    @media only screen and (max-width:448px){
+        .btn-full{
+            margin-bottom :20px ;
+        }
+    }
+
+    /* .main-nav{ float: left;} */
+    
+
